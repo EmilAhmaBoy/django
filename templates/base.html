@@ -24,34 +24,35 @@
     {% endblock %}
     {% block top-sellers-nav-item %}
     <li class="nav-item">
-        <a class="nav-link" href="{% url 'top-sellers' %}"><span style="font-weight: bold;">Топ продавцов</span>
+        <a class="nav-link" href="{% url 'top-sellers' %}">
+            <span style="font-weight: bold;">Топ продавцов</span>
         </a>
     </li>
     {% endblock %}
     {% block advertisement-post-nav-item %}
     <li class="nav-item">
-        <a class="nav-link" href="advertisement-post.html">
+        <a class="nav-link" href="{% url 'advertisement-post' %}">
             <span style="font-weight: bold;">Разместить объявление</span>
         </a>
     </li>
     {% endblock %}
     {% block register-nav-item %}
     <li class="nav-item">
-        <a class="nav-link" href="register.html">
+        <a class="nav-link" href="{% url 'register' %}">
             <span style="font-weight: bold;">Регистрация</span>
         </a>
     </li>
     {% endblock %}
     {% block login-nav-item %}
     <li class="nav-item">
-        <a class="nav-link" href="login.html">
+        <a class="nav-link" href="{% url 'login' %}">
             <span style="font-weight: bold;">Войти</span>
         </a>
     </li>
     {% endblock %}
     {% block profile-nav-item %}
     <li class="nav-item">
-        <a class="nav-link" href="profile.html">
+        <a class="nav-link" href="{% url 'profile' %}">
             <span style="font-weight: bold;">Профиль</span>
         </a>
     </li>

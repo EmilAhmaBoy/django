@@ -2,12 +2,13 @@
 {% load static %}
 
 {% block title %}
-Главная
+Топ продавцов
 {% endblock %}
 
 {% block top-sellers-nav-item %}
 <li class="nav-item">
-    <a class="nav-link active" href="{% url 'top-sellers' %}"><span style="font-weight: bold;">Топ продавцов</span>
+    <a class="nav-link active" href="{% url 'top-sellers' %}">
+        <span style="font-weight: bold;">Топ продавцов</span>
     </a>
 </li>
 {% endblock %}
