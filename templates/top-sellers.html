@@ -1,3 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block top-sellers-nav-item %}
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'top-sellers' %}"><span style="font-weight: bold;">Топ продавцов</span>
+    </a>
+</li>
+{% endblock %}
+
+{% block content %}
 <div class="row">
     <div class="col" style="margin: 50px;">
         <div class="display-2">
@@ -63,7 +78,4 @@
         </div>
     </nav>
 </footer>
-<script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+{% endblock %}
